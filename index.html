@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GUAO ICE CREAMS</title>
+    <title>GUAO HELADOS</title>
     <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/styles/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -14,26 +14,27 @@
     <header>
         <img src="./assets/images/logo.png" class="logoFrontPage" alt="">
         <nav class="navHeader bg-warning">
-            <a href="#aboutUs" class="anchorHeader">About Us</a>
-            <a href="#distributors" class="anchorHeader">Distributors</a>
-            <a href="#iceCreamShops" class="anchorHeader">Ice Cream Shops</a>
-            <a href="#policy" class="anchorHeader">Our Policy</a>
-            <a href="#brand" class="anchorHeader">Our Brand</a>
+            <a href="#aboutUs" class="anchorHeader">Nosotros</a>
+            <a href="#distributors" class="anchorHeader">Distribuidoras</a>
+            <a href="#iceCreamShops" class="anchorHeader">Heladerías</a>
+            <a href="#footer" class="anchorHeader">Contáctanos</a>
         </nav>
     </header>
     <main>
         <section class="frontPage">
-            <h2 class="textFrontPage fw-bolder">¡WORK WITH US AND ENJOY! EAT AND EARN WITH GUAO ICE CREAMS</h2>
+            <h2 class="textFrontPage fw-bolder">¡Generar ingresos 
+                con nosotros 
+                es más fácil!</h2>
         </section>
         <section class="aboutUs" id="aboutUs">
             <article class="generalContainer generalContainerAboutUsSize">
-                <h2 class="aboutUsTitle">ABOUT US</h2>
+                <h2 class="aboutUsTitle">ACERCA DE NOSOTROS</h2>
                 <div class="aboutUsContainer">
                     <img src="./assets/images/imageAboutUs.png" alt="Girl with Ice Cream" class="imageAboutUs">
                     <div class="textAboutUs">
-                        <p>We are a new company in search of satisfying the needs of our people. Believing in our principles that have made us a great country.</p>
-                        <p class="fw-bold fontSizeBig">We faithfully believe that we can and will do our part to improve our daily lives. WE WILL NOT REST UNTIL WE ACHIEVE IT</p>
-                        <p>As a brand we exist since 2010, starting in the south of the country and expanding little by little to cover the whole territory.</p>
+                        <p>Somos una empresa joven, familiar creyendo en el país desde muy temprano y tiempos difíciles…</p>
+                        <p class="fw-bold fontSizeBig">Apostando a que si se puede, llevaremos esto al MÁXIMO</p>
+                        <p>Nuestra marca nació el 23 de diciembre el 2020, en la apertura de nuestro primer centro de distribución en caracas, ubicado en la  avenida Lecuna.</p>
                     </div>
                 </div>
             </article>  
@@ -71,7 +72,7 @@
         </div>
         <section class="distributor" id="distributors">
             <article class="generalContainer generalContainerDistributorSize">
-                <h2 class="distributorTitle">Distributors</h2>
+                <h2 class="distributorTitle">Distribuidoras</h2>
                 <div class="cards">
                     <template v-for="distributor of distributors">
                         <div class="cardGeneral">
@@ -82,11 +83,13 @@
                                 <p class="fw-bolder">{{distributor.address1}}</p>
                                 <p>{{distributor.address2}}</p>
                                 <p>{{distributor.address3}}</p>
+                                <p>{{distributor.number}}</p>
                             </div>
                         </div>
                         <div class="cardButtons">
-                            <button class="buttonCard">See map</button>
-                            <a href=""><span class="iconify iconifyCard" data-icon="bi:whatsapp"></a>
+
+                            <a :href="distributor.map" target="_blank"><button class="buttonCard">MAPA</button></a>
+                            <a :href="distributor.ws" target="_blank"><span class="iconify iconifyCard" data-icon="bi:whatsapp"></a>
                             </div>
                         </div>
                     </template>
@@ -95,7 +98,7 @@
         </section>
         <section class="iceCreamShops" id="iceCreamShops">
             <article class="generalContainer generalContainericeCreamShopsSize">
-                <h2 class="iceCreamShopsTitle">Ice Cream Shops</h2>
+                <h2 class="iceCreamShopsTitle">Heladerías</h2>
                 <div class="cards">
                     <template v-for="iceCreamShop of iceCreamShops">
                         <div class="cardGeneral">
@@ -109,8 +112,8 @@
                             </div>
                         </div>
                         <div class="cardButtons">
-                            <button class="buttonCard">See map</button>
-                            <a href=""><span class="iconify iconifyCard" data-icon="bi:whatsapp"></a>
+                            <button class="buttonCard" target="_blank">MAPA</button>
+                            <a href="" target="_blank"><span class="iconify iconifyCard" data-icon="bi:whatsapp"></a>
                         </div>
                         </div>
                     </template>
@@ -119,26 +122,27 @@
         </section>
         <section class="policy" id="policy">
             <article class="mission">
-                <h2 class="missionTitle">Mission</h2>
-                <p class="missionText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, accusamus ad? Saepe ducimus provident itaque unde ipsam tempore error nulla accusamus nesciunt possimus beatae eveniet non reprehenderit, rerum deserunt repellendus ipsum. Adipisci exercitationem voluptatibus mollitia fugit quasi magni. Labore, provident doloremque autem culpa deleniti laboriosam officiis porro fugit aperiam tempora?</p>
+                <h2 class="missionTitle">Mision</h2>
+                <p class="missionText">umplir con los valores de reforzar la economía venezolana. Y que cada uno de nuestros clientes tengan la certeza de que pueden generar ingresos de forma segura trabajando de la mano con nosotros. 
+
+                    Teniendo la certeza de trabajar con productos de primera calidad , y con un grupo de profesionales que los giaran a la venta exitosa de nuestros helados …</p>
             </article>
             <article class="vision">
                 <h2 class="visionTitle">Vision</h2>
-                <p class="visionText">Lorem ipsum dolor sit amet consectetur adipisicing elit. At maiores voluptatem possimus molestias consequatur nulla nesciunt animi, ad, dolores a ipsum, sit perspiciatis minus. Atque officiis modi sequi aliquam quidem, neque debitis veritatis dolore molestiae assumenda voluptate perferendis possimus. Mollitia dicta numquam quaerat facere aliquid facilis! A repellat perspiciatis doloribus?</p>
+                <p class="visionText">Llegar a todos los rincones del país, saliendo desde la gran capital (Caracas) desde el 2020, y cumplir con cada uno de nuestros 23 estados venezolanos, siendo unas de las mejores marcas y productos del país, en cuanto a nuestro gremio se refiere</p>
             </article>
             <article class="ourPolicy">
-                <h2 class="ourPolicyTitle">Our policy</h2>
-                <p class="ourPolicyText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati eaque earum fugit officiis animi. Dolorem minus molestiae beatae nostrum, sed, quia nulla architecto ullam ipsum non odio corrupti quibusdam inventore veniam laborum sunt dolorum dolor suscipit possimus adipisci? Tenetur ullam tempora, iure velit ab nobis esse autem quidem error iste.</p>
+                <h2 class="ourPolicyTitle">Nuestra política</h2>
+                <p class="ourPolicyText">Mantener los mejores precios y la mejor calidad en nuestros productos, dándole la mejor atención y asesoria posible a nuestros clientes, llevándolos por el camino de éxito.</p>
             </article>
         </section>
         <section class="brand" id="brand">
             <article class="generalContainer generalContainerBrandSize">
-                <h2 class="brandTitle">WORK WITH US</h2>
+                <h2 class="brandTitle">Emprende con Guao</h2>
                 <div class="brandContainer">
                     <div class="textBrand">
-                        <p>We are working hard to be the number 1 brand in the country; however, it is a job we cannot do alone and that is why we want to tell you about our way of working and our ideas for growth.</p>
-                        <p>Join us and you will see how you will not only gain economically, but also grow as a person and as an influence in your community. </p>
-                        <h2 class="fw-bolder fs-5">Contact us!</h2>
+                        <p>Guao helados, es una marca netamente de centros de distribución de helados, por los momentos. Nos especializamos en tener los mejores estándares de precios y productos, con la mejor calidad y variedad, brindándole a todos nuestros clientes las herramientas necesarias para expandir su propio negocio desde casa o local comercial, vendiendo nuestros productos. </p>
+                        <h2 class="fw-bolder fs-5">¡CONTÁCTANOS!</h2>
                     </div>
                     <img src="./assets/images/imageWorkWithUs.png" alt="People who works at GUAO" class="imageBrand">
                 </div>
@@ -149,11 +153,11 @@
         </section>
     </main>
     <footer class="footer">
-        <h2 class="footerTitle">CONTACT US</h2>
+        <h2 class="footerTitle">¡CONTÁCTANOS!</h2>
         <div class="footerData">
 
             <dl class="listPhones">
-                <dt class="phoneTitle">Telephones</dt>
+                <dt class="phoneTitle">Teléfonos</dt>
                 <dd>Catia - Ccs - 04125478963</dd>
                 <dd>Av. Lecuna - Ccs - 04241234567</dd>
                 <dd>Caricuao - Ccs - 04269876543</dd>
@@ -162,14 +166,14 @@
             </dl>
             <dl class="email">
                 <dt class="emailTitle">EMAIL</dt>
-                <dd>contact@niceicecream.com</dd>
+                <a class="mailFont" href="mailto:contacto@guaohelados.com">contacto@guaohelados.com</a>
             </dl>
             <dl class="listSocialMedia">
                 <dt class="socialTitle">Social Media</dt>
                 <dd class="socialLogo">
-                    <a href="" class="facebook"><iconify-icon icon="uil:facebook"></iconify-icon></a>
-                    <a href="" class="instagram"><iconify-icon class="instagramLogo" icon="ant-design:instagram-outlined"></iconify-icon></a>
-                    <a href="" class=""><span class="iconify whatsapp" data-icon="bi:whatsapp"></span></a>
+                    <a href="https://www.facebook.com/search/top?q=guaohelados" class="facebook"><iconify-icon icon="uil:facebook"></iconify-icon></a>
+                    <a href="https://www.instagram.com/guaohelados/ " class="instagram"><iconify-icon class="instagramLogo" icon="ant-design:instagram-outlined"></iconify-icon></a>
+                    <a href="https://api.whatsapp.com/message/EDZWGIZ75IJUF1?autoload=1&app_absent=0" class=""><span class="iconify whatsapp" data-icon="bi:whatsapp"></span></a>
                 </dd>            
             </dl>
         </div>
