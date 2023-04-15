@@ -252,6 +252,10 @@
     align-items: center;
     width: 100%;
 }
+.brandContainer img{
+height: 40%;
+width: 40%;
+}
 .textBrand {
     display: flex;
     flex-direction: column;
@@ -269,6 +273,7 @@
 .generalContainerBrandSize {
     min-height: 90vh;
     width: 90vw;
+    justify-content: center;
 }
 /*Brand*/
 /*Closure*/
@@ -309,6 +314,11 @@
 }
 .whatsapp, .facebook, .instagram{
     font-size: 30px;
+    text-decoration: none;
+    color: #F5BD19;
+}
+.email a{
+    font-size: 20px;
     text-decoration: none;
     color: #F5BD19;
 }
