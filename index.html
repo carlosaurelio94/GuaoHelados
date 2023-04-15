@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUAO ICE CREAMS</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body>
+<div id="app">
+    <header>
+        <img src="./assets/images/logo.png" class="logoFrontPage" alt="">
+        <nav class="navHeader bg-warning">
+            <a href="#aboutUs" class="anchorHeader">About Us</a>
+            <a href="#distributors" class="anchorHeader">Distributors</a>
+            <a href="#iceCreamShops" class="anchorHeader">Ice Cream Shops</a>
+            <a href="#policy" class="anchorHeader">Our Policy</a>
+            <a href="#brand" class="anchorHeader">Our Brand</a>
+        </nav>
+    </header>
+    <main>
+        <section class="frontPage">
+            <h2 class="textFrontPage fw-bolder">¡WORK WITH US AND ENJOY! EAT AND EARN WITH GUAO ICE CREAMS</h2>
+        </section>
+        <section class="aboutUs" id="aboutUs">
+            <article class="generalContainer generalContainerAboutUsSize">
+                <h2 class="aboutUsTitle">ABOUT US</h2>
+                <div class="aboutUsContainer">
+                    <img src="./assets/images/imageAboutUs.png" alt="Girl with Ice Cream" class="imageAboutUs">
+                    <div class="textAboutUs">
+                        <p>We are a new company in search of satisfying the needs of our people. Believing in our principles that have made us a great country.</p>
+                        <p class="fw-bold fontSizeBig">We faithfully believe that we can and will do our part to improve our daily lives. WE WILL NOT REST UNTIL WE ACHIEVE IT</p>
+                        <p>As a brand we exist since 2010, starting in the south of the country and expanding little by little to cover the whole territory.</p>
+                    </div>
+                </div>
+            </article>  
+        </section>
+        <div class="sectionCarousel" id="carousel">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/images/carousel1.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/images/carousel2.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/images/carousel3.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/images/carousel4.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <section class="distributor" id="distributors">
+            <article class="generalContainer generalContainerDistributorSize">
+                <h2 class="distributorTitle">Distributors</h2>
+                <div class="cards">
+                    <template v-for="distributor of distributors">
+                        <div class="cardGeneral">
+                            <img :src="distributor.image" alt="" class="cardImg">
+                        <div class="cardText">
+                            <h4 class="cardTitle">{{distributor.city}}</h4>
+                            <div class="cardDescription">
+                                <p class="fw-bolder">{{distributor.address1}}</p>
+                                <p>{{distributor.address2}}</p>
+                                <p>{{distributor.address3}}</p>
+                            </div>
+                        </div>
+                        <div class="cardButtons">
+                            <button class="buttonCard">See map</button>
+                            <a href=""><span class="iconify iconifyCard" data-icon="bi:whatsapp"></a>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+            </article>
+        </section>
+        <section class="iceCreamShops" id="iceCreamShops">
+            <article class="generalContainer generalContainericeCreamShopsSize">
+                <h2 class="iceCreamShopsTitle">Ice Cream Shops</h2>
+                <div class="cards">
+                    <template v-for="iceCreamShop of iceCreamShops">
+                        <div class="cardGeneral">
+                            <img :src="iceCreamShop.image" alt="" class="cardImg">
+                        <div class="cardText">
+                            <h4 class="cardTitle">{{iceCreamShop.city}}</h4>
+                            <div class="cardDescription">
+                                <p>{{iceCreamShop.address1}}</p>
+                                <p>{{iceCreamShop.address2}}</p>
+                                <p>{{iceCreamShop.address3}}</p>
+                            </div>
+                        </div>
+                        <div class="cardButtons">
+                            <button class="buttonCard">See map</button>
+                            <a href=""><span class="iconify iconifyCard" data-icon="bi:whatsapp"></a>
+                        </div>
+                        </div>
+                    </template>
+                </div>
+            </article>
+        </section>
+        <section class="policy" id="policy">
+            <article class="mission">
+                <h2 class="missionTitle">Mission</h2>
+                <p class="missionText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, accusamus ad? Saepe ducimus provident itaque unde ipsam tempore error nulla accusamus nesciunt possimus beatae eveniet non reprehenderit, rerum deserunt repellendus ipsum. Adipisci exercitationem voluptatibus mollitia fugit quasi magni. Labore, provident doloremque autem culpa deleniti laboriosam officiis porro fugit aperiam tempora?</p>
+            </article>
+            <article class="vision">
+                <h2 class="visionTitle">Vision</h2>
+                <p class="visionText">Lorem ipsum dolor sit amet consectetur adipisicing elit. At maiores voluptatem possimus molestias consequatur nulla nesciunt animi, ad, dolores a ipsum, sit perspiciatis minus. Atque officiis modi sequi aliquam quidem, neque debitis veritatis dolore molestiae assumenda voluptate perferendis possimus. Mollitia dicta numquam quaerat facere aliquid facilis! A repellat perspiciatis doloribus?</p>
+            </article>
+            <article class="ourPolicy">
+                <h2 class="ourPolicyTitle">Our policy</h2>
+                <p class="ourPolicyText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati eaque earum fugit officiis animi. Dolorem minus molestiae beatae nostrum, sed, quia nulla architecto ullam ipsum non odio corrupti quibusdam inventore veniam laborum sunt dolorum dolor suscipit possimus adipisci? Tenetur ullam tempora, iure velit ab nobis esse autem quidem error iste.</p>
+            </article>
+        </section>
+        <section class="brand" id="brand">
+            <article class="generalContainer generalContainerBrandSize">
+                <h2 class="brandTitle">WORK WITH US</h2>
+                <div class="brandContainer">
+                    <div class="textBrand">
+                        <p>We are working hard to be the number 1 brand in the country; however, it is a job we cannot do alone and that is why we want to tell you about our way of working and our ideas for growth.</p>
+                        <p>Join us and you will see how you will not only gain economically, but also grow as a person and as an influence in your community. </p>
+                        <h2 class="fw-bolder fs-5">Contact us!</h2>
+                    </div>
+                    <img src="./assets/images/imageWorkWithUs.png" alt="People who works at GUAO" class="imageBrand">
+                </div>
+            </article>
+        </section>
+        <section class="closure" id="closure">
+            
+        </section>
+    </main>
+    <footer class="footer">
+        <h2 class="footerTitle">CONTACT US</h2>
+        <div class="footerData">
+
+            <dl class="listPhones">
+                <dt class="phoneTitle">Telephones</dt>
+                <dd>Catia - Ccs - 04125478963</dd>
+                <dd>Av. Lecuna - Ccs - 04241234567</dd>
+                <dd>Caricuao - Ccs - 04269876543</dd>
+                <dd>Los Teques - Miranda - 04124567890</dd>
+                <dd>Guatire - Miranda - 04127894561</dd>
+            </dl>
+            <dl class="email">
+                <dt class="emailTitle">EMAIL</dt>
+                <dd>contact@niceicecream.com</dd>
+            </dl>
+            <dl class="listSocialMedia">
+                <dt class="socialTitle">Social Media</dt>
+                <dd class="socialLogo">
+                    <a href="" class="facebook"><iconify-icon icon="uil:facebook"></iconify-icon></a>
+                    <a href="" class="instagram"><iconify-icon class="instagramLogo" icon="ant-design:instagram-outlined"></iconify-icon></a>
+                    <a href="" class=""><span class="iconify whatsapp" data-icon="bi:whatsapp"></span></a>
+                </dd>            
+            </dl>
+        </div>
+    </footer>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+<script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="./assets/js/index.js"></script>
+
+</html>

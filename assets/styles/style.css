@@ -1,0 +1,662 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Quicksand:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: comfortaa;
+}
+.navHeader {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 3rem;
+}
+.anchorHeader {
+    text-decoration: none;
+    padding-right: 1rem;
+    color:#60291C;
+    font-weight: 900;    
+    font-size: 30px;
+}
+.anchorHeader:hover {
+    color: #F6285A;
+    font-weight: 700;
+}
+.logoFrontPage {
+    height: 250px;
+    position: absolute;
+    top: -30px;
+    left: 0px;
+}
+/*Front Page*/
+.frontPage {
+    min-height: 100vh;
+    background-image: url(../images/imageFrontPage.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.textFrontPage {
+    width: 50vw;
+    font-size: 70px;
+    text-align: center;
+}
+/*Front Page*/
+/*About Us*/
+.aboutUs {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+.fontSizeBig {
+    font-size: calc(1.325rem + .9vw);
+}
+.generalContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-top: #F6285A solid 8px;
+    border-bottom: #F5BD19 8px solid;
+    padding: 2rem;
+}
+.generalContainerAboutUsSize {
+    min-height: 90vh;
+    width: 90vw;
+}
+.aboutUsTitle, .distributorTitle {
+    font-size: 100px;
+    color: #60291C;
+}
+.aboutUsContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.textAboutUs {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 30px;
+    height: 50vh;
+    width: 50%;
+    color: #60291C;
+    font-weight: 400;
+}
+.imageAboutUs {
+    height: 40vh;
+    width: 30vw;
+}
+/*About Us*/
+/*Carousel*/
+.sectionCarousel {
+    min-height: 20vh;
+}
+/*Carousel*/
+/*Cards*/
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+}
+.cardGeneral {
+    height: 320px;
+    width: 240px;
+    border: 2px solid;
+    background-color: white;
+}
+.cardImg {
+    height: 35%;
+    width: 100%;
+}
+.cardText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 53%;
+    width: 100%;
+    text-align: center;
+}
+.cardTitle {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 15%;
+    width: 100%;
+    margin: 0;
+    padding-top: 2rem;
+    font-size: 20px;
+}
+.cardDescription {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    justify-content: center;
+    align-items: center;
+    height: 85%;
+    font-size: 16px;
+    padding: 0.2rem;
+}
+.cardDescription p {
+    font-family: quicksand;
+    margin: 0;
+}
+.cardButtons {
+    height: 12%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.1rem;
+    background-color: brown;
+}
+.buttonCard {
+    padding: 0.1rem;
+    border-radius: 0.5rem;
+    background-color: #F6285A;
+    color: white;
+    width: 130px;
+    font-weight: 700
+}
+.iconifyCard{
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: #25D366;
+    padding: 0.2rem;
+}
+/*Cards*/
+/*distributor*/
+.distributor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+.generalContainerDistributorSize {
+    min-height: 64vh;
+    width: 90vw;
+}
+/*distributor*/
+/*Ice Cream Shops*/
+.iceCreamShops{
+    background-color: brown;
+    min-height: 64vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-image: url(../images/imageIceCream.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.generalContainericeCreamShopsSize {
+    min-height: 64vh;
+    width: 90vw;
+}
+.iceCreamShopsTitle {
+    color: beige;
+    font-size: 100px;
+}
+/*Ice Cream Shops*/
+/*Policy*/
+.policy {
+    min-height: 75vh;
+    background-color: #F6285A;
+    display: flex;
+    flex-direction: column;
+}
+.mission, .vision, .ourPolicy {
+    display: flex;
+    align-items: center;
+    height: 25vh;
+}
+.missionTitle, .visionTitle, .ourPolicyTitle {
+    width: 30%;
+    text-align: center;
+    font-size: 60px;
+    color: white;
+}
+.missionText, .visionText, .ourPolicyText {
+    width: 65%;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+}
+.vision, .ourPolicy {
+    border-top: #F5BD19 dashed 2px;
+}
+/*Policy*/
+/*Brand*/
+.brand {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+.brandTitle {
+    font-size: 100px;
+    color: #60291C;
+}
+.brandContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.textBrand {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 30px;
+    height: 50vh;
+    width: 50%;
+    color: #60291C;
+    font-weight: 400;
+}
+.imageBrand {
+    height: 50vh;
+    width: 50vw;
+}
+.generalContainerBrandSize {
+    min-height: 90vh;
+    width: 90vw;
+}
+/*Brand*/
+/*Closure*/
+.closure {
+    min-height: 80vh;
+    background-color: red;
+    background-image: url(../images/finalImage.png);
+    background-size: cover;
+    background-position: center;
+}
+/*Closure*/
+/*Footer*/
+.footer {
+    display: flex;
+    min-height: 20vh;
+    background-color: #60291C;
+    padding: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #F5BD19;
+}
+.footerTitle {
+    font-size: 30px;
+}
+.footerData {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    gap: 5rem;
+}
+.email, .listPhones, .listSocialMedia {
+    height: 100%;
+    width: 33vh;
+}
+.emailTitle, .phoneTitle, .socialTitle {
+    font-size: 20px;
+}
+.whatsapp, .facebook, .instagram{
+    font-size: 30px;
+    text-decoration: none;
+    color: #F5BD19;
+}
+.instagram {
+    font-size: 40px;
+}
+.whatsapp {
+    margin-top: 5px;
+}
+.instagramLogo {
+    margin-bottom: 5px;
+}
+.socialLogo {
+    display: flex;
+    gap: 1rem;
+}
+/*Footer
+/*MediaQueries*/
+@media screen and (max-width: 1440px) {
+    .textFrontPage {
+        width: 70vw;
+    }
+    .textAboutUs {
+        font-size: 22px;
+    }
+    .mission, .vision, .ourPolicy {
+        height: 35vh;
+    }
+    .missionText, .visionText, .ourPolicyText {
+        width: 65%;
+        text-align: center;
+        font-size: 22px;
+        color: white;
+    }
+    .textBrand {
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .frontPage {
+        background-position: -300px;
+    }
+    .textFrontPage {
+        width: 30vw;
+        font-size: 40px;
+    }
+    .aboutUsTitle, .distributorTitle {
+        text-align: center;
+    }
+    .aboutUsContainer {
+        flex-direction: column-reverse;
+        gap: 10rem;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .textAboutUs {
+        font-size: 22px;
+        width: 100%;
+        height: 30vh;
+    }
+    .imageAboutUs {
+        width: 40vw;
+        height: 30vh;
+    }
+    .aboutUsContainer {
+        justify-content: center;
+        align-items: center;
+    }
+    .missionText, .visionText, .ourPolicyText {
+        font-size: 18px;
+    }
+    .brandContainer {
+        flex-direction: column-reverse;
+        gap: 5rem;
+    }
+    .brandTitle, .aboutUsTitle, .distributorTitle, .iceCreamShopsTitle {
+        font-size: 70px;
+    }
+    .missionTitle, .visionTitle, .ourPolicyTitle {
+        font-size: 30px
+    }
+    .imageBrand {
+        height: 30vh;
+        width: 40vw;
+    }
+    .textBrand {
+        font-size: 22px;
+        height: 30vh;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 768px) {
+    .frontPage {
+        background-position: -470px;
+    }
+    .textFrontPage {
+        width: 40vw;
+        font-size: 50px;
+    }
+    .brandTitle, .aboutUsTitle, .distributorTitle, .iceCreamShopsTitle {
+        font-size: 60px;
+    }
+    .aboutUsContainer {
+        gap: 13rem;
+    }   
+    .textBrand {
+        font-size: 21px;
+    }
+    .imageBrand {
+        height: 40vh;
+        width: 60vw;
+    }
+    .footer {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 2rem;
+    }
+    .footerData {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    dt {
+        margin-bottom: 1rem;
+    }
+    .emailTitle, .phoneTitle, .socialTitle {
+        text-align: center;
+        border-bottom: 2px solid red;
+    }
+    .email, .listPhones, .listSocialMedia {
+        width: 45vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .navHeader {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 645px) {
+    .frontPage {
+        background-position: 700px;
+        justify-content: center;
+    }
+    .textFrontPage {
+        width: 100vw;
+        font-size: 50px;
+    }
+    .aboutUsContainer {
+        gap: 12rem;
+    }
+    .textAboutUs {
+        font-size: 17px;
+        width: 100%;
+    }
+    .generalContainer {
+        padding: 2rem 0rem 0rem 0rem;
+    }
+    .imageAboutUs {
+        width: 50vw;
+    }
+    .brandTitle, .aboutUsTitle, .distributorTitle, .iceCreamShopsTitle {
+        font-size: 41px;
+    }
+    .mission, .vision, .ourPolicy {
+        flex-direction: column;
+        height: 37vh;
+    }
+    .missionTitle, .visionTitle, .ourPolicyTitle {
+        width: 100%;
+        font-size: 50px;
+        padding-top: 1rem;
+    }
+    .missionText, .visionText, .ourPolicyText {
+        width: 90%;
+        font-size: 15px;
+    }
+    .cards {
+        margin-bottom: 1rem;
+    }
+    .brandContainer {
+        gap: 2rem;
+    }
+    .imageBrand {
+        width: 75vw;
+    }
+    .textBrand {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .frontPage {
+        background-position: 500px;
+        justify-content: center;
+        align-items: center;
+    }
+    .textFrontPage {
+        width: 100vw;
+        font-size: 40px;
+    }
+    
+    .textAboutUs {
+        font-size: 14px;
+    }
+    .imageAboutUs {
+        height: 30vh;
+        width: 80vw;
+    }
+    .missionTitle, .visionTitle, .ourPolicyTitle {
+        font-size: 40px;
+    }
+    .missionText, .visionText, .ourPolicyText {
+        font-size: 14px;
+    }
+    .brandContainer {
+        gap: 4rem;
+    }
+    .imageBrand {
+        height: 30vh;
+    }
+    .textBrand {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .aboutUsContainer {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .imageAboutUs {
+        height: 15vh;
+        width: 50vw;
+    }
+    .textAboutUs {
+        font-size: 12px;
+        gap: 0.5rem;
+    }
+    .mission, .vision, .ourPolicy {
+        height: 45vh;
+    }
+    .missionTitle, .visionTitle, .ourPolicyTitle {
+        font-size: 50px;
+    }
+    .missionText, .visionText, .ourPolicyText {
+        font-size: 14px;
+    }
+    .brandContainer {
+        gap: 3rem;
+    }
+    .textBrand {
+        font-size: 13px;
+    }
+    .imageBrand {
+        height: 25vh;
+    }
+    .email, .listPhones, .listSocialMedia {
+        width: 90vw;
+    }
+}
+@media screen and (max-width: 320px) {
+    .textFrontPage {
+        font-size: 30px;
+    }
+    .textAboutUs {
+        font-size: 12px;
+    }
+    .fontSizeBig {
+        font-size: 13px;
+    }
+    .distributorTitle, .aboutUsTitle, .iceCreamShopsTitle, .brandTitle {
+        font-size: 30px;
+    }
+    .missionTitle, .visionTitle, .ourPolicyTitle {
+        font-size: 25px;
+    }
+    .missionText, .visionText, .ourPolicyText {
+        font-size: 12px;
+    }
+    .brandContainer {
+        gap: 2rem;
+    }
+    .imageBrand {
+        width: 50vw;
+    }
+    .textBrand {
+        font-size: 10px;
+    }
+}
+@media screen and (min-height: 300px) and (max-height: 500px) and (orientation: landscape) {
+    .frontPage {
+        background-position: 760px;
+        justify-content: center;
+    }
+    .textFrontPage {
+        width: 40vw;
+        font-size: 30px;
+    }
+    .aboutUsContainer {
+        gap: 20rem;
+    }
+    .imageAboutUs {
+        height: 80vh;
+    }
+    .mission, .vision, .ourPolicy {
+        flex-direction: column;
+        height: 100vh;
+        gap: 1rem;
+        padding-top: 1rem;
+    }
+    .brandContainer {
+        flex-direction: column-reverse;
+        gap: 5rem;
+    }
+    .textBrand {
+        height: 80vh;
+    }
+    .imageBrand {
+        height: 100vh;
+    }
+    .footerData {
+        gap: 8rem;
+    }
+}
+@media screen and (min-height: 700px) and (max-height: 1000px) and (orientation: landscape){
+    .frontPage {
+        background-position: -300px;
+        justify-content: flex-end;
+        padding: 5rem;
+    }
+    .textFrontPage {
+        width: 50vw;
+        font-size: 50px;
+    }
+    .textAboutUs {
+        font-size: 20px;
+    }
+    .fontSizeBig {
+        font-size: 25px;
+    }
+    .textBrand {
+        font-size: 23px;
+    }
+}
+/*MediaQueries*/
