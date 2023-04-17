@@ -567,7 +567,7 @@ width: 40%;
         width: 60vw !important;
     }
     .textBrand {
-        font-size: 140px;
+        font-size: 15px;
     }
 }
 @media screen and (max-width: 375px) {
@@ -596,7 +596,7 @@ width: 40%;
         gap: 3rem;
     }
     .textBrand {
-        font-size: 13px;
+        font-size: 130px;
     }
     .imageBrand {
         height: 25vh;
