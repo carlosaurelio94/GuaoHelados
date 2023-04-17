@@ -113,6 +113,8 @@
 /*Carousel*/
 .sectionCarousel {
     min-height: 20vh;
+    margin-left: 5rem;
+    margin-right: 5rem;
 }
 /*Carousel*/
 /*Cards*/
@@ -354,24 +356,23 @@ width: 40%;
 /*Footer
 /*MediaQueries*/
 
-@media screen and (min-width:1250px) {
-    .textFrontPage {
-        width: 40vw;
-        font-size: 90px;
-        padding-right: 0rem;
-        padding-bottom: 2rem;
-    }
 
-}
 
 @media screen and (max-width: 1440px) {
     .textFrontPage {
         width: 70vw;
     }
+    .aboutUsTitle {
+        font-size: 90px;
+    }
     .textAboutUs {
         font-size: 30px;
         width: 80%;
         padding-left: 1rem;
+    }
+    .sectionCarousel {
+        margin-left: 4rem;
+        margin-right: 4rem;
     }
     .mission, .vision, .ourPolicy {
         height: 40vh;
@@ -386,6 +387,39 @@ width: 40%;
         font-size: 24px;
     }
 }
+@media screen and (min-width:1250px) and (max-width: 1330px) {
+    .textFrontPage {
+        width: 30vw;
+        font-size: 70px;
+        padding-right: 0rem;
+        padding-bottom: 2rem;
+    }
+    .logoFrontPage {
+        height: 200px;
+        padding-bottom: 3rem;
+    }
+    .aboutUsTitle {
+        font-size: 60px;
+    }
+    .textAboutUs {
+        font-size: 28px;
+        padding-top: 2rem;
+    }
+    .sectionCarousel {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+    .listSocialMedia {
+        margin-left: 3rem;
+    }
+    .email {
+        padding-right: 4rem;
+    }
+    .navHeaderDesktop {
+        align-items: flex-start;
+        padding-top: 1rem;
+    }
+}
 @media screen and (max-width: 1024px) {
     .header {
         display: block;
@@ -393,8 +427,8 @@ width: 40%;
         background-position: center;
         background-size: cover;
     }
-    .navDesktop {
-        display: none;
+    .frontPage {
+        
     }
     .anchorHeader {
         font-size: 20px;
@@ -470,6 +504,9 @@ width: 40%;
         background-image: url(../images/imageFrontPageMediaQueries.png);
         background-position: center;
         background-size: cover;
+    }
+    .navDesktop {
+        display: none;
     }
     .navHeader {
         display: flex;
