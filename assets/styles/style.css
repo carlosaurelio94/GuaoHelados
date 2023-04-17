@@ -6,9 +6,20 @@
     box-sizing: border-box;
     font-family: comfortaa;
 }
+.header {
+    display: none;
+}
+.navDesktop {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.logoFrontPageDesktop {
+    height: 250px;
+}
 .navHeader {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
     gap: 3rem;
 }
@@ -23,12 +34,13 @@
     color: #F6285A;
     font-weight: 700;
 }
+
 .logoFrontPage {
     height: 250px;
     position: absolute;
     top: -30px;
     left: 0px;
-}
+} 
 /*Front Page*/
 .frontPage {
     min-height: 100vh;
@@ -36,7 +48,8 @@
     background-position: center;
     background-size: cover;
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
 }
 .textFrontPage {
@@ -337,10 +350,22 @@ width: 40%;
 }
 /*Footer
 /*MediaQueries*/
+
+@media screen and (min-width:1250px) {
+    .textFrontPage {
+        width: 40vw;
+        font-size: 90px;
+        padding-right: 0rem;
+        padding-bottom: 2rem;
+    }
+
+}
+
 @media screen and (max-width: 1440px) {
     .textFrontPage {
         width: 70vw;
     }
+    
     .textAboutUs {
         font-size: 30px;
         width: 80%;
@@ -360,6 +385,9 @@ width: 40%;
     }
 }
 @media screen and (max-width: 1024px) {
+    .navDesktop {
+        display: none;
+    }
     .anchorHeader {
         font-size: 20px;
     }
@@ -368,7 +396,9 @@ width: 40%;
         left: -10px;
     }
     .frontPage {
+        flex-direction: row;
         background-position: -600px;
+        justify-content: flex-end;
         align-items: center;
         padding-right: 2rem;
     }
@@ -427,6 +457,9 @@ width: 40%;
     }
 }
 @media screen and (max-width: 768px) {
+    .header {
+        display: block;
+    }
     .navHeader {
         min-height: 100vh;
         justify-content: center;
