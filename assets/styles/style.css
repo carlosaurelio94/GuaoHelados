@@ -386,8 +386,14 @@ width: 40%;
     .textBrand {
         font-size: 24px;
     }
-}
-@media screen and (min-width:1250px) and (max-width: 1330px) {
+
+
+
+
+
+
+    
+
     .textFrontPage {
         width: 30vw;
         font-size: 70px;
@@ -420,6 +426,7 @@ width: 40%;
         padding-top: 1rem;
     }
 }
+
 @media screen and (max-width: 1024px) {
     .header {
         display: block;
