@@ -56,7 +56,7 @@
     align-items: center;
 }
 .textFrontPage {
-    width: 50vw;
+    width: 30vw;
     font-size: 70px;
     text-align: center;
 }
@@ -358,9 +358,9 @@ width: 40%;
 
 
 
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 1440px) and (max-width: 1650px) {
     .textFrontPage {
-        width: 70vw;
+        width: 40vw;
     }
     .aboutUsTitle {
         font-size: 90px;
@@ -389,7 +389,7 @@ width: 40%;
 
 }
 
-@media screen and (min-width: 1250px) and (max-width: 1350px) {
+@media screen and (min-width: 1250px) and (max-width: 1440px) {
     
     .textFrontPage {
         width: 30vw;
@@ -540,6 +540,10 @@ width: 40%;
     .aboutUsContainer {
         gap: 13rem;
     }   
+    .sectionCarousel {
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
     .textBrand {
         font-size: 21px;
     }
