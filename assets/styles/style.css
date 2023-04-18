@@ -432,7 +432,11 @@ width: 40%;
     }
     
 }
-
+@media screen and (min-width: 1025px) and (max-width: 1179px) {
+    .navHeaderDesktop a {
+        font-size: 20px;
+    }
+}
 @media screen and (max-width: 1024px) {
     .header {
         display: block;
@@ -671,10 +675,14 @@ width: 40%;
         align-items: center;
     }
     .textFrontPage {
-        width: 100vw;
+        width: 80vw;
         font-size: 40px;
+        margin-left: 0rem;
+        padding-bottom: 12rem;
     }
-    
+    .logoFrontPage {
+        top: 0px;
+    }
     .textAboutUs {
         font-size: 17px;
     }
