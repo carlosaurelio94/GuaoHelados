@@ -426,6 +426,9 @@ width: 40%;
         align-items: flex-start;
         padding-top: 1rem;
     }
+    .whatsapp, .facebook, .instagram {
+        
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -435,7 +438,8 @@ width: 40%;
         background-position: center;
         background-size: cover;
     }
-    .frontPage {
+    .logoFrontPageDesktop {
+        display: none;
     }
     .anchorHeader {
         font-size: 20px;
@@ -443,7 +447,7 @@ width: 40%;
     .logoFrontPage {
         height: 250px;
         position: absolute;
-        top: 1000px;
+        top: 10px;
         left: 0px;
     }
     .frontPage {
