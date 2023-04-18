@@ -614,6 +614,7 @@ width: 40%;
         font-size: 23px !important;
     }
     .closure {
+       background-position:center -1px ;
         background-image: url(../images/closureMediaQueries.png);
     }
 }
