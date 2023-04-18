@@ -11,7 +11,7 @@ createApp({
                         {city:'Miranda', address1:'Los Teques', address2: 'Bajada El Tambor', address3: 'frente a la urbanización Simón Bolívar , Centro Comercial San José.', ws:'https://api.whatsapp.com/send?phone=584120195058&text=¡Hola buenas tardes!', image:'./assets/heladerias-img/Los Teques.jpg', number: '+58412019505', map:`https://www.google.com/maps?q=9X38+JM6+Guao+Helados,+Los+Teques+1201,+Miranda&ftid=0x8c2a8d4a60ecabd9:0xf26168c0133c7747&hl=es-VE&gl=ve&entry=gps&lucs=47062714&g_ep=CAISBjYuNTQuMRgAINeCAyoINDcwNjI3MTRCAlZF&g_st=iwb`}
                         ],
         iceCreamShops: [{city:'Caracas', address1:'CC Propatria', address2: 'Calle sucre y Anzoátegui,', address3: 'Res. Belén Blanco, local B, PB. Guatire.', ws:'https://api.whatsapp.com/send?phone=584241505167&text=¡Hola buenas tardes!', image:'./assets/heladerias-img/heladeria propatria.jpg'}, 
-                    {city:'Caracas', address1:'Centro', address2: 'Av. José Vicente Rangel', address3: 'Norte 4, esquina el conde.', ws:'https://api.whatsapp.com/send?phone=584241505167&text=¡Hola buenas tardes!', image:'./assets/heladerias-img/'},
+                    {city:'Caracas', address1:'Centro', address2: 'Av. José Vicente Rangel', address3: 'Norte 4, esquina el conde.', ws:'https://api.whatsapp.com/send?phone=584241505167&text=¡Hola buenas tardes!', image:'./assets/heladerias-img/GUAO HELADERIA CENTRO.png'},
                     ],
     }
     }

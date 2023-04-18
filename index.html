@@ -19,16 +19,10 @@
         <img src="./assets/images/logo.png" class="logoFrontPage" alt="">
     
         <nav class="navHeader">
-            <div class="divNav">
-
                 <a href="#aboutUs" class="anchorHeader fontWeigthBold">Nosotros</a>
                 <a href="#distributors" class="anchorHeader fontWeigthBold">Distribuidoras</a>
-            </div>
-            <div class="divNav">
-
                 <a href="#iceCreamShops" class="anchorHeader fontWeigthBold">Heladerías</a>
                 <a href="#footer" class="anchorHeader fontWeigthBold">Contáctanos</a>
-            </div>
         </nav>
     </header>
     <main>
@@ -66,16 +60,20 @@
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="./assets/images/carousel1.png" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
+                        <img src="./assets/images/carousel3.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
                         <img src="./assets/images/carousel2.png" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="./assets/images/carousel3.png" class="d-block w-100" alt="...">
+                        <img src="./assets/images/carousel5.png" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
                         <img src="./assets/images/carousel4.jpg" class="d-block w-100" alt="...">
@@ -120,7 +118,7 @@
         <section class="iceCreamShops" id="iceCreamShops">
             <article class="generalContainer generalContainericeCreamShopsSize">
                 <h2 class="iceCreamShopsTitle">Heladerías</h2>
-                <div class="cards">
+                <div class="cards cardsFlex">
                     <template v-for="iceCreamShop of iceCreamShops">
                         <div class="cardGeneral">
                             <img :src="iceCreamShop.image" alt="" class="cardImg">
@@ -192,11 +190,11 @@
                 <a class="mailFont" href="mailto:contacto@guaohelados.com">contacto@guaohelados.com</a>
             </dl>
             <dl class="listSocialMedia">
-                <dt class="socialTitle">Social Media</dt>
+                <dt class="socialTitle"></dt>
                 <dd class="socialLogo">
-                    <a href="https://www.facebook.com/search/top?q=guaohelados" class="facebook"><iconify-icon icon="uil:facebook"></iconify-icon></a>
-                    <a href="https://www.instagram.com/guaohelados/ " class="instagram"><iconify-icon class="instagramLogo" icon="ant-design:instagram-outlined"></iconify-icon></a>
-                    <a href="https://api.whatsapp.com/message/EDZWGIZ75IJUF1?autoload=1&app_absent=0" class=""><span class="iconify whatsapp" data-icon="bi:whatsapp"></span></a>
+                    <a href="https://www.facebook.com/search/top?q=guaohelados" class="facebook" target="_blank"><iconify-icon icon="uil:facebook"></iconify-icon></a>
+                    <a href="https://www.instagram.com/guaohelados/ " class="instagram" target="_blank"><iconify-icon class="instagramLogo" icon="ant-design:instagram-outlined"></iconify-icon></a>
+                    <a href="https://api.whatsapp.com/message/EDZWGIZ75IJUF1?autoload=1&app_absent=0" class="" target="_blank"><span class="iconify whatsapp" data-icon="bi:whatsapp"></span></a>
                 </dd>            
             </dl>
         </div>

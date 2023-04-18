@@ -81,7 +81,7 @@
     width: 90vw;
 }
 .aboutUsTitle, .distributorTitle {
-    font-size: 100px;
+    font-size: 80px;
     color: #60291C;
 }
 .aboutUsContainer {
@@ -119,6 +119,11 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 1.5rem;
+}
+.cardsFlex{
+    justify-content: center;
+    gap: 10rem;
+
 }
 .cardGeneral {
     height: 320px;
@@ -169,7 +174,7 @@
     display: flex;
     justify-content: space-evenly;
     padding: 0.1rem;
-    background-color: brown;
+    background-color: #60291C;
 }
 .buttonCard {
     padding: 0.1rem;
@@ -183,7 +188,7 @@
     height: 100%;
     width: 100%;
     text-decoration: none;
-    color: #25D366;
+    color: white;
     padding: 0.2rem;
 }
 /*Cards*/
@@ -217,7 +222,7 @@
 }
 .iceCreamShopsTitle {
     color: beige;
-    font-size: 100px;
+    font-size: 80px;
 }
 /*Ice Cream Shops*/
 /*Policy*/
@@ -317,6 +322,7 @@ width: 40%;
     align-items: center;
     width: 80%;
     gap: 5rem;
+    padding-left: rem;
 }
 .email, .listPhones, .listSocialMedia {
     height: 100%;
@@ -348,6 +354,9 @@ width: 40%;
     display: flex;
     gap: 1rem;
 }
+.facebook {
+    font-size: 35px;
+}
 /*Footer
 /*MediaQueries*/
 
@@ -358,7 +367,7 @@ width: 40%;
         width: 40vw;
     }
     .aboutUsTitle {
-        font-size: 90px;
+        font-size: 60px;
     }
     .textAboutUs {
         font-size: 30px;
@@ -430,7 +439,9 @@ width: 40%;
         align-items: flex-start;
         padding-top: 1rem;
     }
-    
+    .footerData{
+        padding-left: 5rem;
+    }
 }
 @media screen and (min-width: 1025px) and (max-width: 1179px) {
     .navHeaderDesktop a {
@@ -535,6 +546,10 @@ width: 40%;
     .socialLogo {
         justify-content: center;
     }
+    .closure {
+        background-position:center -1px ;
+         background-image: url(../images/closureMediaQueries.png);
+     }
 }
 
 @media screen and (max-width: 768px) {
@@ -564,6 +579,7 @@ width: 40%;
     }
     .frontPage {
         background-position: -470px;
+    
     }
     .textFrontPage {
         width: 40vw;
@@ -624,7 +640,7 @@ width: 40%;
         justify-content: center;
     }
     .textFrontPage {
-        width: 100vw;
+        width: 80vw;
         font-size: 50px;
     }
     .aboutUsContainer {
@@ -663,7 +679,8 @@ width: 40%;
         gap: 2rem;
     }
     .imageBrand {
-        width: 75vw;
+        width: 50%;
+        height: 50%;
     }
     .textBrand {
         font-size: 14px;
@@ -683,6 +700,9 @@ width: 40%;
     }
     .logoFrontPage {
         top: 0px;
+    }
+    .cardsFlex{
+        gap: 1.5rem;
     }
     .textAboutUs {
         font-size: 17px;
@@ -710,6 +730,7 @@ width: 40%;
     }
     .textBrand {
         font-size: 15px;
+        padding-bottom: 1.5rem;
     }
 }
 @media screen and (max-width: 375px) {
@@ -736,12 +757,14 @@ width: 40%;
     }
     .missionText, .visionText, .ourPolicyText {
         font-size: 16px;
+        margin-bottom: 5rem;
     }
     .brandContainer {
         gap: 3rem;
     }
     .textBrand {
         font-size: 13px;
+        
     }
     .imageBrand {
         height: 25vh;
