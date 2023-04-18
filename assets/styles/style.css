@@ -54,6 +54,7 @@
     width: 30vw;
     font-size: 70px;
     text-align: center;
+    margin-left: 10rem;
 }
 /*Front Page*/
 /*About Us*/
@@ -383,7 +384,7 @@ width: 40%;
 
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+@media screen and (min-width: 1180px) and (max-width: 1440px) {
     
     .textFrontPage {
         width: 40vw;
@@ -401,6 +402,9 @@ width: 40%;
     }
     .aboutUsTitle {
         font-size: 60px;
+    }
+    .imageAboutUs {
+        height: 50vh;
     }
     .textAboutUs {
         font-size: 28px;
@@ -426,9 +430,7 @@ width: 40%;
         align-items: flex-start;
         padding-top: 1rem;
     }
-    .whatsapp, .facebook, .instagram {
-        
-    }
+    
 }
 
 @media screen and (max-width: 1024px) {
@@ -437,6 +439,9 @@ width: 40%;
         background-image: url(../images/imageFrontPageMediaQueries.png);
         background-position: center;
         background-size: cover;
+    }
+    .navHeaderDesktop a {
+        font-size: 20px;
     }
     .logoFrontPageDesktop {
         display: none;
@@ -447,8 +452,8 @@ width: 40%;
     .logoFrontPage {
         height: 250px;
         position: absolute;
-        top: 10px;
-        left: 0px;
+        top: 30px;
+        right: 10px;
     }
     .frontPage {
         flex-direction: column;
@@ -512,6 +517,22 @@ width: 40%;
         flex-direction: column;
     }
 }
+@media screen and (max-width: 850px) {
+    .footerData {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .emailTitle, .phoneTitle, .socialTitle {
+        text-align: center;
+    }
+    .listPhones dd {
+        text-align: center;
+    }
+    .socialLogo {
+        justify-content: center;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .header {
         display: block;
