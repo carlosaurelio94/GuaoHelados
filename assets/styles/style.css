@@ -22,7 +22,7 @@
     justify-content: flex-start;
     align-items: center;
     gap: 3rem;
-    height: 70px;
+    height: 150px;
 }
 .navHeader {
     display: none;
@@ -39,12 +39,6 @@
     font-weight: 700;
 }
 
-.logoFrontPage {
-    height: 250px;
-    position: absolute;
-    top: -30px;
-    left: 0px;
-} 
 /*Front Page*/
 .frontPage {
     min-height: 100vh;
@@ -392,12 +386,16 @@ width: 40%;
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
     
     .textFrontPage {
-        width: 30vw;
-        font-size: 70px;
+        width: 40vw;
+        font-size: 60px;
         padding-right: 0rem;
-        padding-bottom: 2rem;
+        margin-left: 15rem;
+        margin-bottom: 15rem;
     }
     .logoFrontPage {
+        display: none;
+    }
+    .logoFrontPageDesktop {
         height: 200px;
         padding-bottom: 3rem;
     }
@@ -406,11 +404,17 @@ width: 40%;
     }
     .textAboutUs {
         font-size: 28px;
-        padding-top: 2rem;
+        margin-bottom: 10rem;
+    }
+    .mission, .vision, .ourPolicy {
+        height: 40vh;
     }
     .sectionCarousel {
         margin-left: 4rem;
         margin-right: 4rem;
+    }
+    .textBrand {
+        margin-bottom: 17rem;
     }
     .listSocialMedia {
         margin-left: 3rem;
@@ -432,25 +436,27 @@ width: 40%;
         background-size: cover;
     }
     .frontPage {
-        
     }
     .anchorHeader {
         font-size: 20px;
     }
     .logoFrontPage {
-        display: none;
-
+        height: 250px;
+        position: absolute;
+        top: 1000px;
+        left: 0px;
     }
     .frontPage {
-        flex-direction: row;
+        flex-direction: column;
         background-position: -600px;
-        justify-content: flex-end;
         align-items: center;
         padding-right: 2rem;
     }
     .textFrontPage {
         width: 40vw;
-        font-size: 50px;
+        font-size: 60px;
+        padding-top: 5rem;
+        margin-left: 8rem;
     }
     .aboutUsTitle, .distributorTitle {
         text-align: center;
