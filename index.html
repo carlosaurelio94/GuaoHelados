@@ -17,7 +17,7 @@
             <a href="#aboutUs" class="anchorHeader">Nosotros</a>
             <a href="#distributors" class="anchorHeader">Distribuidoras</a>
             <a href="#iceCreamShops" class="anchorHeader">Heladerías</a>
-            <a href="#footer" class="anchorHeader">Contáctanos</a>
+            <a href="#footerContainer" class="anchorHeader">Contáctanos</a>
         </nav>
     </header>
     <main>
@@ -110,11 +110,13 @@
                                 <p>{{iceCreamShop.address2}}</p>
                                 <p>{{iceCreamShop.address3}}</p>
                             </div>
+                            </div>
+                            <div class="cardButtons">
+
+                                <a :href="iceCreamShops.map" target="_blank"><button class="buttonCard">MAPA</button></a>
+                                </div>
                         </div>
-                        <div class="cardButtons">
-                            <button class="buttonCard" target="_blank">MAPA</button>
-                            <a href="" target="_blank"><span class="iconify iconifyCard" data-icon="bi:whatsapp"></a>
-                        </div>
+                        
                         </div>
                     </template>
                 </div>
@@ -122,13 +124,13 @@
         </section>
         <section class="policy" id="policy">
             <article class="mission">
-                <h2 class="missionTitle">Mision</h2>
+                <h2 class="missionTitle">Misión</h2>
                 <p class="missionText">umplir con los valores de reforzar la economía venezolana. Y que cada uno de nuestros clientes tengan la certeza de que pueden generar ingresos de forma segura trabajando de la mano con nosotros. 
 
                     Teniendo la certeza de trabajar con productos de primera calidad , y con un grupo de profesionales que los giaran a la venta exitosa de nuestros helados …</p>
             </article>
             <article class="vision">
-                <h2 class="visionTitle">Vision</h2>
+                <h2 class="visionTitle">Visión</h2>
                 <p class="visionText">Llegar a todos los rincones del país, saliendo desde la gran capital (Caracas) desde el 2020, y cumplir con cada uno de nuestros 23 estados venezolanos, siendo unas de las mejores marcas y productos del país, en cuanto a nuestro gremio se refiere</p>
             </article>
             <article class="ourPolicy">
@@ -152,7 +154,7 @@
             
         </section>
     </main>
-    <footer class="footer">
+    <footer id="footerContainer" class="footer">
         <h2 class="footerTitle">¡CONTÁCTANOS!</h2>
         <div class="footerData">
 
