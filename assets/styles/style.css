@@ -55,6 +55,7 @@
     font-size: 70px;
     text-align: center;
     margin-left: 10rem;
+    color: #60291C;
 }
 /*Front Page*/
 /*About Us*/
@@ -370,8 +371,8 @@ width: 40%;
         font-size: 60px;
     }
     .textAboutUs {
-        font-size: 30px;
-        width: 80%;
+        font-size: 50px;
+        width: 50%;
         padding-left: 1rem;
     }
     .sectionCarousel {
@@ -390,6 +391,9 @@ width: 40%;
     .textBrand {
         font-size: 24px;
     }
+ .generalContainer{
+    justify-content: space-around
+}
 
 }
 
@@ -710,6 +714,7 @@ width: 40%;
     .imageAboutUs {
         height: 30vh;
         width: 80vw;
+    
     }
     .missionTitle, .visionTitle, .ourPolicyTitle {
         font-size: 40px;
