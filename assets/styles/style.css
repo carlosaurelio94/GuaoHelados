@@ -6,6 +6,13 @@
     box-sizing: border-box;
     font-family: comfortaa;
 }
+.mi-seccion {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+  }
+  .mi-seccion.visible {
+    opacity: 1;
+  }
 .header {
     display: none;
 }
