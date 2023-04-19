@@ -363,6 +363,9 @@ width: 40%;
 
 
 @media screen and (min-width: 1440px) and (max-width: 1650px) {
+    .navDesktop a {
+        font-size: 30px;
+    }
     .textFrontPage {
         width: 40vw;
     }
@@ -447,6 +450,21 @@ width: 40%;
     .navHeaderDesktop a {
         font-size: 20px;
     }
+    .mission, .vision, .ourPolicy {
+        height: 40vh;
+    }
+    .footer {
+        font-size: 15px;
+    }
+    .footerData {
+        gap: 2rem;
+    }
+    .email a {
+        font-size: 15px;
+    }
+    .footerTitle {
+        font-size: 30px;
+    }
 }
 @media screen and (max-width: 1024px) {
     .header {
@@ -514,6 +532,9 @@ width: 40%;
     .brandTitle, .aboutUsTitle, .distributorTitle, .iceCreamShopsTitle {
         font-size: 70px;
     }
+    .mission, .vision, .ourPolicy {
+        height: 35vh;
+    }
     .missionTitle, .visionTitle, .ourPolicyTitle {
         font-size: 30px
     }
@@ -530,6 +551,9 @@ width: 40%;
     }
     .footer {
         flex-direction: column;
+    }
+    .listPhones, .email, .listSocialMedia {
+        text-align: center;
     }
 }
 @media screen and (max-width: 850px) {
@@ -550,14 +574,24 @@ width: 40%;
         background-position:center -1px ;
          background-image: url(../images/closureMediaQueries.png);
      }
+     .mission, .vision, .ourPolicy {
+        height: 40vh;
+     }
+
+
+
 }
 
 @media screen and (max-width: 768px) {
+
     .header {
         display: block;
         background-image: url(../images/imageFrontPageMediaQueries.png);
-        background-position: center;
+        background-position: center 0px;
         background-size: cover;
+    }
+    .frontPage {
+        background-image: url(../images/fondo.png);
     }
     .navDesktop {
         display: none;
@@ -569,17 +603,28 @@ width: 40%;
         align-items: center;
         gap: 3rem;
         min-height: 100vh;
-        padding-bottom: 10rem;
     }
     .divNav {
         display: flex;
     }
     .divNav a {
+        font-size: 50px;
         font-weight: 900;
     }
     .frontPage {
-        background-position: -470px;
+        background-position: 0px;
+    }
+    .logoFrontPage {
+        left: 10px;
+        top: 0px;
+        height: 300px;
+    }
+    .fontWeigthBold {
+        font-size: 50px !important;
+    }
     
+    .mission, .vision, .ourPolicy {
+        height: 40vh;
     }
     .textFrontPage {
         width: 40vw;
@@ -626,13 +671,7 @@ width: 40%;
         justify-content: center;
         align-items: center;
     }
-    .fontWeigthBold {
-        font-size: 23px !important;
-    }
-    .closure {
-       background-position:center -1px ;
-        background-image: url(../images/closureMediaQueries.png);
-    }
+    
 }
 @media screen and (max-width: 645px) {
     .frontPage {
@@ -699,7 +738,9 @@ width: 40%;
         padding-bottom: 12rem;
     }
     .logoFrontPage {
-        top: 0px;
+        height: 350px;
+        top: -30px;
+        left: 35px;
     }
     .cardsFlex{
         gap: 1.5rem;
@@ -773,7 +814,12 @@ width: 40%;
         width: 90vw;
     }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 330px) {
+    .logoFrontPage {
+        top: 250px;
+        left: 25px;
+        height: 250px;
+    }
     .textFrontPage {
         font-size: 30px;
     }
@@ -853,7 +899,7 @@ width: 40%;
 }
 @media screen and (min-height: 700px) and (max-height: 900px) and (orientation: landscape){
     .frontPage {
-        background-position: -300px;
+        background-position: -600px;
         justify-content: flex-start;
         padding: 5rem;
     }
