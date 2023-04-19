@@ -433,7 +433,7 @@ width: 40%;
         font-size: 60px;
     }
     .imageAboutUs {
-        height: 50vh;
+        height: 40vh;
     }
     .textAboutUs {
         font-size: 28px;
@@ -610,6 +610,7 @@ width: 40%;
         background-image: url(../images/imageFrontPageMediaQueries.png);
         background-position: center 0px;
         background-size: cover;
+        background-repeat: no-repeat;
     }
     .frontPage {
         background-image: url(../images/fondo.png);
@@ -686,7 +687,7 @@ width: 40%;
         text-align: center;
     }
     .email, .listPhones, .listSocialMedia {
-        width: 45vh;
+        width: 40vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -696,7 +697,7 @@ width: 40%;
 }
 @media screen and (max-width: 645px) {
     .frontPage {
-        background-position: 700px;
+        background-position: 0px;
         justify-content: center;
     }
     .textFrontPage {
@@ -754,15 +755,14 @@ width: 40%;
 }
 @media screen and (max-width: 425px) {
     .navHeader{
-        padding-bottom: 4rem;
+        padding-bottom: 8rem;
     }
     .frontPage {
-        background-position: 500px;
+        background-position: 0px;
         justify-content: center;
         align-items: center;
     }
     .textFrontPage {
-        width: 100vw;
         font-size: 30px;
         margin-left: 3rem;
         padding-bottom: 12rem;
@@ -813,6 +813,7 @@ width: 40%;
     .aboutUsContainer {
         flex-direction: column;
         gap: 0.5rem;
+        padding-bottom: 5rem;
     }
     .imageAboutUs {
         height: 20vh;
@@ -849,7 +850,7 @@ width: 40%;
         width: 90vw;
     }
     .navHeader a {
-        font-size: 35px !important;
+        font-size: 25px !important;
     }
 }
 @media screen and (max-width: 330px) {
@@ -960,6 +961,7 @@ width: 40%;
     }
     .textBrand {
         font-size: 23px;
+        padding-bottom: 7rem;
     }
 }
 /*MediaQueries*/
