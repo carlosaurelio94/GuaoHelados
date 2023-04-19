@@ -437,7 +437,8 @@ width: 40%;
     }
     .textAboutUs {
         font-size: 28px;
-        margin-bottom: 2rem;
+        margin-bottom: 6rem;
+        padding-top: 6rem;
         justify-content: space-around;
     }
     .mission, .vision, .ourPolicy {
