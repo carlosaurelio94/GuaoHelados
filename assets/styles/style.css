@@ -417,7 +417,7 @@ width: 40%;
     
     .textFrontPage {
         width: 40vw;
-        font-size: 60px;
+        font-size: 50px;
         padding-right: 0rem;
         margin-left: 15rem;
         margin-bottom: 15rem;
@@ -438,7 +438,7 @@ width: 40%;
     .textAboutUs {
         font-size: 28px;
         margin-bottom: 6rem;
-        padding-top: 6rem;
+        padding-top: 8rem;
         justify-content: space-around;
     }
     .mission, .vision, .ourPolicy {
@@ -465,23 +465,17 @@ width: 40%;
         padding-left: 5rem;
     }
     .navHeaderDesktop a {
-        font-size: 18px;
-    }
-}
-
-@media screen and (min-width: 1180px) and (max-width: 1269px) {
-    .navHeaderDesktop a {
         font-size: 13px;
     }
     .navHeader {
         gap: 0.5rem;
     }
-    .textFrontPage {
-        font-size: 50px;
-    }
     .facil {
         font-size: 60px;
     }
+}
+
+@media screen and (min-width: 1180px) and (max-width: 1269px) {
     .textAboutUs {
         font-size: 20px;
     }
