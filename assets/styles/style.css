@@ -53,11 +53,15 @@
     justify-content: flex-start;
     align-items: center;
 }
+.facil{
+    text-transform: uppercase;
+    font-size: 100px;
+}
 .textFrontPage {
-    width: 30vw;
-    font-size: 70px;
+    width: 40vw;
+    font-size: 80px;
     text-align: center;
-    margin-left: 10rem;
+    margin-left: 25rem;
     color: #60291C;
 }
 /*Front Page*/
@@ -75,6 +79,7 @@
 .generalContainer {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     gap: 2rem;
     border-top: #F6285A solid 8px;
     border-bottom: #F5BD19 8px solid;
@@ -425,7 +430,8 @@ width: 40%;
     }
     .textAboutUs {
         font-size: 28px;
-        margin-bottom: 10rem;
+        margin-bottom: 2rem;
+        justify-content: space-around;
     }
     .mission, .vision, .ourPolicy {
         height: 40vh;
@@ -740,21 +746,28 @@ width: 40%;
     }
 }
 @media screen and (max-width: 425px) {
+    .navHeader{
+        padding-bottom: 4rem;
+    }
     .frontPage {
         background-position: 500px;
         justify-content: center;
         align-items: center;
     }
     .textFrontPage {
-        width: 80vw;
-        font-size: 40px;
-        margin-left: 0rem;
+        width: 100vw;
+        font-size: 30px;
+        margin-left: 3rem;
         padding-bottom: 12rem;
     }
+    .facil{
+        text-transform: uppercase;
+        font-size: 40px;
+    }
     .logoFrontPage {
-        height: 180px;
-        top: -30px;
-        left: 35px;
+        height: 220px;
+        top: 20px;
+        left: 80px;
     }
     .cardsFlex{
         gap: 1.5rem;
