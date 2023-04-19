@@ -459,13 +459,13 @@ width: 40%;
     }
     .navHeaderDesktop {
         align-items: flex-start;
-        padding-top: 2rem;
+        padding-top: 1rem;
     }
     .footerData{
         padding-left: 5rem;
     }
     .navHeaderDesktop a {
-        font-size: 13px;
+        font-size: 15px;
     }
     .navHeader {
         gap: 0.5rem;
