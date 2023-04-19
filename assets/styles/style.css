@@ -441,10 +441,13 @@ width: 40%;
     }
     .navHeaderDesktop {
         align-items: flex-start;
-        padding-top: 1rem;
+        padding-top: 2rem;
     }
     .footerData{
         padding-left: 5rem;
+    }
+    .navHeaderDesktop a {
+        font-size: 18px;
     }
 }
 @media screen and (min-width: 1025px) and (max-width: 1179px) {
@@ -814,12 +817,18 @@ width: 40%;
     .email, .listPhones, .listSocialMedia {
         width: 90vw;
     }
+    .navHeader a {
+        font-size: 35px !important;
+    }
 }
 @media screen and (max-width: 330px) {
     .logoFrontPage {
-        top: 250px;
-        left: 25px;
-        height: 250px;
+        top: -20px;
+        left: 150px;
+        height: 150px;
+    }
+    .navHeader a {
+        font-size: 20px !important;
     }
     .textFrontPage {
         font-size: 30px;
