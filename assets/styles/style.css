@@ -392,6 +392,8 @@ width: 40%;
     }
     .navHeaderDesktop{
         gap: 0;
+        position: relative;
+        left: 3rem;
     }
     .listSocialMedia{
         padding-left: 5rem;
@@ -974,6 +976,7 @@ width: 40%;
     .frontPage {
         justify-content: flex-start;
         padding: 5rem;
+        height: 80vh;
     }
     .navDesktop {
         padding-bottom: 10rem;
@@ -982,8 +985,14 @@ width: 40%;
     .textFrontPage {
         width: 50vw;
         font-size: 50px;
-        padding-bottom: 15rem;
+        position: relative;
+        top: -10rem;
+        
     }
+    .textFrontPage h2{
+
+margin-top: -40rem;
+    
     .textAboutUs {
         font-size: 20px;
     }
