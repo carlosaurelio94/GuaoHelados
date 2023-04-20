@@ -533,14 +533,13 @@ width: 40%;
         padding-right: 4rem;
     }
     .navHeaderDesktop {
-        align-items: flex-start;
+        justify-content: flex-end;
         position: relative;
         top: -1.5rem;
         gap: 1rem;
         width: 30rem;
     }
-    .navHeaderDesktop a{
-    }
+
     .footerData{
         padding-left: 5rem;
     }
@@ -559,6 +558,23 @@ width: 40%;
     .textAboutUs {
         font-size: 20px;
     }
+    .logoFrontPageDesktop{
+        height: 15rem;
+    }
+    .aboutUsTitle, .distributorTitle,.iceCreamShopsTitle{
+        font-size: 4rem;
+    }
+    .textFrontPage{
+        font-size: 3em;
+
+        padding-bottom: 25rem;
+    }
+    .missionText, .visionText, .ourPolicyText{
+        font-size: 1em;
+    }
+    .missionTitle, .visionTitle, .ourPolicyTitle{
+        font-size: 4em;
+    }
     .mission, .vision, .ourPolicy {
         height: 40vh;
     }
@@ -567,9 +583,9 @@ width: 40%;
     }
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1179px) {
+@media screen and (min-width: 1025px) and (max-width: 1300px) {
     .navHeaderDesktop a {
-        font-size: 20px;
+        font-size: 1rem;
     }
     .mission, .vision, .ourPolicy {
         height: 40vh;
@@ -593,6 +609,34 @@ width: 40%;
     .footerTitle {
         font-size: 30px;
     }
+    .textBrand{
+        font-size: 1.2em;
+    }
+    .brandTitle{
+        font-size: 4em;
+    }
+    .missionText, .visionText, .ourPolicyText{
+        font-size: 1em;
+    }
+    .missionTitle, .visionTitle, .ourPolicyTitle{
+        font-size: 4em;
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1179px){
+    .aboutUsTitle{
+        font-size: 3em;
+    }
+    .textAboutUs{
+        font-size: 1em;
+    }
+    .textFrontPage{
+        font-size: 3em;
+        padding-bottom: 25rem;
+    }
+    .logoFrontPageDesktop{
+        height: 15rem;
+    }
+
 }
 @media screen and (max-width: 1024px) {
     .header {
@@ -1075,4 +1119,6 @@ width: 40%;
         padding-bottom: 7rem;
     }
 }
+    
+
 /*MediaQueries*/
