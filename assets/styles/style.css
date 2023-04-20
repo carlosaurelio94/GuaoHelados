@@ -389,7 +389,51 @@ width: 40%;
 /*Footer
 /*MediaQueries*/
 
-
+@media screen and (min-width: 1651px) and (max-width: 1850px){
+.textFrontPage{
+    font-size: 3em;
+    padding-top: 0;
+    padding-bottom: 25rem;
+}
+.logoFrontPageDesktop{
+    height: 15rem;
+}
+.navDesktop a{
+    font-size: 1.2em;
+    padding-bottom: 4rem;
+}
+.aboutUsTitle{
+    font-size: 5rem;
+}
+.textAboutUs{
+    font-size: 1.5rem;
+    margin-bottom: 5rem;
+}
+.imageAboutUs{
+    height: 60vh;
+}
+.missionText, .visionText, .ourPolicyText{
+    font-size: 1em;
+}
+.missionTitle, .visionTitle, .ourPolicyTitle{
+    font-size: 3.5em;
+}
+.textBrand{
+    font-size: 1.5em;
+}
+.footer{
+    flex-direction: column;
+}
+.footerData{
+    justify-content: space-around;
+}
+.footerTitle{
+    font-size: 3rem;
+}
+.closure{
+    height: 100vh;
+}
+}
 
 @media screen and (min-width: 1440px) and (max-width: 1650px) {
    
