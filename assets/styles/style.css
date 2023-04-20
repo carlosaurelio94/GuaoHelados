@@ -65,7 +65,7 @@
     font-size: 100px;
 }
 .textFrontPage {
-    width: 40vw;
+    width: 45vw;
     font-size: 80px;
     text-align: center;
     margin-left: 25rem;
@@ -419,11 +419,11 @@ width: 40%;
 
 }
 
-@media screen and (min-width: 1180px) and (max-width: 1440px) {
+@media screen and (min-width: 1270px) and (max-width: 1440px) {
     
     .textFrontPage {
         width: 40vw;
-        font-size: 60px;
+        font-size: 50px;
         padding-right: 0rem;
         margin-left: 15rem;
         margin-bottom: 15rem;
@@ -443,7 +443,8 @@ width: 40%;
     }
     .textAboutUs {
         font-size: 28px;
-        margin-bottom: 2rem;
+        margin-bottom: 6rem;
+        padding-top: 8rem;
         justify-content: space-around;
     }
     .mission, .vision, .ourPolicy {
@@ -464,21 +465,43 @@ width: 40%;
     }
     .navHeaderDesktop {
         align-items: flex-start;
-        padding-top: 2rem;
+        padding-top: 1rem;
     }
     .footerData{
         padding-left: 5rem;
     }
     .navHeaderDesktop a {
-        font-size: 18px;
+        font-size: 15px;
+    }
+    .navHeader {
+        gap: 0.5rem;
+    }
+    .facil {
+        font-size: 60px;
     }
 }
+
+@media screen and (min-width: 1180px) and (max-width: 1269px) {
+    .textAboutUs {
+        font-size: 20px;
+    }
+    .mission, .vision, .ourPolicy {
+        height: 40vh;
+    }
+    .brandContainer p {
+        font-size: 20px;
+    }
+}
+
 @media screen and (min-width: 1025px) and (max-width: 1179px) {
     .navHeaderDesktop a {
         font-size: 20px;
     }
     .mission, .vision, .ourPolicy {
         height: 40vh;
+    }
+    .navHeader {
+        gap: 1rem;
     }
     .footer {
         font-size: 15px;
