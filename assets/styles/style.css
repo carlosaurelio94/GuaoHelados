@@ -119,7 +119,6 @@
 }
 .imageAboutUs {
     height: 40vh;
-    width: 30vw;
 }
 /*About Us*/
 /*Carousel*/
@@ -566,7 +565,7 @@ width: 40%;
     }
     .imageAboutUs {
         width: 40vw;
-        height: 30vh;
+        
     }
     .aboutUsContainer {
         justify-content: center;
