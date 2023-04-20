@@ -509,12 +509,22 @@ width: 40%;
     .mission, .vision, .ourPolicy {
         height: 40vh;
     }
+    .missionText, .visionText, .ourPolicyText{
+        font-size: 1.5em;
+    }
+    .missionTitle, .visionTitle, .ourPolicyTitle{
+        font-size: 5em;
+    }
     .sectionCarousel {
         margin-left: 4rem;
         margin-right: 4rem;
     }
     .textBrand {
         margin-bottom: 17rem;
+        font-size: 1.8em;
+    }
+    .brandTitle{
+        font-size: 5rem;
     }
     .listSocialMedia {
         margin-left: 3rem;
@@ -524,7 +534,12 @@ width: 40%;
     }
     .navHeaderDesktop {
         align-items: flex-start;
-        padding-top: 1rem;
+        position: relative;
+        top: -1.5rem;
+        gap: 1rem;
+        width: 30rem;
+    }
+    .navHeaderDesktop a{
     }
     .footerData{
         padding-left: 5rem;
