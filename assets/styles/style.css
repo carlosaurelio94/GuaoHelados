@@ -52,7 +52,7 @@
 
 /*Front Page*/
 .frontPage {
-    min-height: 100vh;
+    min-height: 80vh;
     background-image: url(../images/imageFrontPage.jpg);
     background-position: center;
     background-size: cover;
