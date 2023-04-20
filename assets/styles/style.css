@@ -746,7 +746,9 @@ width: 40%;
      .mission, .vision, .ourPolicy {
         height: 40vh;
      }
-
+     .socialLogo {
+        padding-left: 0rem;
+    }
 
 
 }
@@ -959,6 +961,7 @@ width: 40%;
         font-size: 15px;
         padding-bottom: 1.5rem;
     }
+    
 }
 @media screen and (max-width: 375px) {
     .aboutUsContainer {
