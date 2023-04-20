@@ -389,7 +389,7 @@ width: 40%;
 /*Footer
 /*MediaQueries*/
 
-@media screen and (min-width: 1651px) and (max-width: 3000px){
+@media screen and (width: 1651px){
 .textFrontPage{
     font-size: 3em;
     padding-top: 0;
