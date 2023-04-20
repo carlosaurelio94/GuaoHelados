@@ -391,6 +391,12 @@ width: 40%;
         width: 50%;
         padding-left: 1rem;
     }
+    .navHeaderDesktop{
+        gap: 0;
+    }
+    .listSocialMedia{
+        padding-left: 5rem;
+    }
     .sectionCarousel {
         margin-left: 4rem;
         margin-right: 4rem;
@@ -944,7 +950,6 @@ width: 40%;
 }
 @media screen and (min-height: 700px) and (max-height: 900px) and (orientation: landscape){
     .frontPage {
-        background-position: 0px;
         justify-content: flex-start;
         padding: 5rem;
     }
@@ -955,6 +960,7 @@ width: 40%;
     .textFrontPage {
         width: 50vw;
         font-size: 50px;
+        padding-bottom: 15rem;
     }
     .textAboutUs {
         font-size: 20px;
