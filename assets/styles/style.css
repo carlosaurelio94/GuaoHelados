@@ -386,9 +386,10 @@ width: 40%;
         font-size: 60px;
     }
     .textAboutUs {
-        font-size: 50px;
+        font-size: 20px;
         width: 50%;
         padding-left: 1rem;
+        
     }
     .navHeaderDesktop{
         gap: 0;
@@ -986,13 +987,10 @@ width: 40%;
         width: 50vw;
         font-size: 50px;
         position: relative;
-        top: -10rem;
-        
+        top: -13rem;
+        left: 5rem;
     }
-    .textFrontPage h2{
 
-margin-top: -40rem;
-    
     .textAboutUs {
         font-size: 20px;
     }
